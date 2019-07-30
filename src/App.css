@@ -9,14 +9,19 @@ header h1{
 nav h2{
   border-right:1px solid gray;
   width:600px;
-  height:125px;
+  height:100px;
   
 }
 article h1{
   border-right:1px solid gray;
   width:600px;
   height:300px;
+  border-top:1px solid gray
 }
 article h1 li{
+  
   font-size: 15px;
 }
+
+
+

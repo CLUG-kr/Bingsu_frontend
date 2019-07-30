@@ -114,8 +114,20 @@ class App extends Component {
                   ________________<LoggingButton/>
                 </ol>
               </li>
-            </h1>
-        </article>
+             </h1>
+           </article>
+            <asdf>
+              ___________조
+            </asdf>
+            <dt>
+              <ul>
+                이지학:20192470
+              </ul>
+              <ul>
+                신동민:20158294
+              </ul>
+            </dt>
+        
 
       </div>
     );

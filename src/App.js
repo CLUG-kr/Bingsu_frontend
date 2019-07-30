@@ -21,28 +21,7 @@ class Name extends Component {
     )
   }
 }
-class StudentNumber extends Component {
-  state ={
-    name: ''
-  }
-  handleChange = (e) => {
-    this.setState({
-      name: e.target.value
-    })
-  }
-  render(){
-    return(
-      <form>
-        <input
-        placeholder="학번 입력"
-        value={this.state.name}
-        onChange={this.handleChange}
-        />
-      </form>
-    )
-  }
-}
-class PhoneForm extends Component {
+class NameStudentNumber extends Component {
   state = {
     name: '',
     phone: ''
@@ -83,6 +62,20 @@ class PhoneForm extends Component {
     );
   }
 }
+class LoggingButton extends React.Component {
+  handleClick() {
+    console.log('this is:', this);
+  }
+
+  render() {
+    // This syntax ensures `this` is bound within handleClick
+    return (
+      <button onClick={(e) => this.handleClick(e)}>
+        수락
+      </button>
+    );
+  }
+}
 class App extends Component {
   render(){
   return (
@@ -97,7 +90,7 @@ class App extends Component {
         <nav>
           <h2>
             초대하기
-            <PhoneForm/> 
+            <NameStudentNumber/> 
           </h2>
         </nav>
         <article>
@@ -105,7 +98,21 @@ class App extends Component {
               초대내역
               <li>
                 보냄
-                
+                <ol>
+                  ________________
+                </ol>
+                <ol>
+                  ________________
+                </ol>
+              </li>
+              <li>
+                받음
+                <ol>
+                  ________________<LoggingButton/>
+                </ol>
+                <ol>
+                  ________________<LoggingButton/>
+                </ol>
               </li>
             </h1>
         </article>

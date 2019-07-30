@@ -1,5 +1,21 @@
 header h1{
-  color:blue;
+  color:black;
+  border-bottom:1px solid gray;
+  padding:20px;
+  border-right:1px solid gray;
+  width:560px;
+  
+}
+nav h2{
+  border-right:1px solid gray;
+  width:600px;
+  height:125px;
+  
+}
+article h1{
+  border-right:1px solid gray;
+  width:600px;
+  height:300px;
 }
 article h1 li{
   font-size: 15px;
